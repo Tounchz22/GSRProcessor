@@ -16,7 +16,7 @@ st.set_page_config(page_title="Home",page_icon="",layout="wide")
 st.title(" :bar_chart: GSR Processor")
 
 #load data set
-df=pd.read_excel("data.xlsx")
+#df=pd.read_excel("data.xlsx")
 #st.dataframe(df,use_container_width=True)
 
 #side bar
@@ -33,7 +33,7 @@ with st.sidebar:
 
 st.error(" you have choosen analytics from: "+ str(start_date) +" to" + str(end_date))
 
-df2=df[(df["OrderDate"]>=str(start_date))& (df["OrderDate"]<= str(end_date))]
+#df2=df[(df["OrderDate"]>=str(start_date))& (df["OrderDate"]<= str(end_date))]
 
 
 uploaded_file = st.file_uploader("Upload your Excel or CSV file", type=["xlsx", "csv"])
